@@ -1,9 +1,9 @@
 #!/bin/bash
-#Ubuntu User Data Script: Install Git, Java, Jenkins
-# Log output to /var/log/user-data.log & /var/log/syslog
-exec > >(tee /var/log/user-data.log | logger -t user-data) 2>&1
+#Ubuntu User Data Script: Install Java, Jenkins
+# # Log output to /var/log/user-data.log & /var/log/syslog
+# exec > >(tee /var/log/user-data.log | logger -t user-data) 2>&1
 
-set -e
+# set -e
 
 echo "Updating packages..."
 apt-get update -y
